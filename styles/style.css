@@ -339,7 +339,7 @@ dialog[open]::backdrop {
   transform: fill 0.1s linear;;
 }
 
-.card__icon-button:hover .core{
+.card__icon-button:hover .core {
   fill: var(--heart-contour);
   transition: fill 0.3s ease-in;
 }
@@ -349,7 +349,7 @@ dialog[open]::backdrop {
   transition: fill 0.3s 0.05s;
 }
 
-.card__icon-button:active .core{
+.card__icon-button:active .core {
   fill: #f00;
   transition: fill 0.3s ease-in;
 }

@@ -11,6 +11,10 @@
 */
 
 .page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--card-content-weight);
@@ -23,7 +27,7 @@
 .header {
   margin-top: 100px;
   display: flex;
-  width: 100vw;
+  width: 100%;
   border: 2px solid #000;
   background-color: #fff;
   align-items: center;
@@ -53,9 +57,12 @@
 .card {
   background-color: #fff;
   border: 2px solid #000;
-  margin-top: 50px;
   display: flex;
   justify-content: center;
+}
+
+.card:not(:first-child) {
+  margin-top: 50px;
 }
 
 .card__header {
@@ -344,6 +351,7 @@ dialog[open]::backdrop {
 
 .like-icon.is-liked .heart {
   animation: heart-scale 0.3s 0.1s ease-in;
+  transform-origin: center;
 }
 
 .like-icon.is-liked .sparks {
@@ -359,15 +367,8 @@ dialog[open]::backdrop {
 }
 
 @media (width > 375px) {
-  .page {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .header {
-    width: min(100vw, 700px);
+    width: min(100%, 700px);
     margin-bottom: 50px;
     padding-top: 128px;
     padding-bottom: 124px;
@@ -375,12 +376,16 @@ dialog[open]::backdrop {
   }
 
   .header h1 {
-    font-size: clamp(2.222rem, -5.859rem + 45.455vw, 4rem);
+    font-size: clamp(2rem, 4.5vw, 4.0625rem);
     text-align: center;
   }
 
   .header__text {
     font-size: 23px;
+  }
+
+  .card {
+    margin-top: 50px;
   }
 
   .card__header {
@@ -401,7 +406,8 @@ dialog[open]::backdrop {
   }
 
   .main_section {
-    width: min(100vw, 700px);
+    width: min(100%, 700px);
+    margin: 0 auto;
   }
 
   .save__section {

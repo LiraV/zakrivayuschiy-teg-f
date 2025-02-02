@@ -68,7 +68,7 @@
 .card__header {
   font-variation-settings: "wght" var(--card-title-weight);
   font-size: 18px;
-  margin: 2px 12px 6px 12px;
+  margin: 4px 12px 4px 12px;
 }
 
 .card__image {
@@ -94,7 +94,7 @@
 }
 
 .card__text {
-  margin: 21px 27px 25px 27px;
+  margin: 25px 27px 25px 27px;
   display: flex;
   gap: 27px;
   flex-direction: column;

@@ -11,10 +11,8 @@
 */
 
 .page {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   min-height: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" var(--card-content-weight);
@@ -22,6 +20,7 @@
   background-attachment: fixed;
   background-size: cover;
   font-size: 18px;
+  margin: auto 0;
 }
 
 .header {
@@ -51,7 +50,8 @@
 }
 
 .main_section {
-  margin-bottom: 50px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .card {
@@ -72,7 +72,7 @@
 }
 
 .card__image {
-  width: 100vw;
+  width: 100%;
   aspect-ratio: 1 / 1;
 }
 
@@ -145,6 +145,7 @@
   justify-content: center;
   margin-bottom: 100px;
   position: relative;
+  margin-top: 50px;
 }
 
 .button__text {
@@ -368,7 +369,7 @@ dialog[open]::backdrop {
 
 @media (width > 375px) {
   .header {
-    width: min(100%, 700px);
+    max-width: 700px;
     margin-bottom: 50px;
     padding-top: 128px;
     padding-bottom: 124px;
@@ -406,7 +407,7 @@ dialog[open]::backdrop {
   }
 
   .main_section {
-    width: min(100%, 700px);
+    max-width: 700px;
     margin: 0 auto;
   }
 

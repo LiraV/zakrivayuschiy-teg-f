@@ -10,8 +10,6 @@
 
 */
 
-
-
 .page {
   min-height: 100dvb;
   font-family: var(--main-font), sans-serif;
@@ -26,7 +24,6 @@
   margin-top: 100px;
   display: flex;
   width: 100vw;
-  padding: 0px;
   border: 2px solid #000;
   background-color: #fff;
   align-items: center;
@@ -82,7 +79,9 @@
   inset-block: 25px;
   inset-inline-end: 13px;
   z-index: 100;
-  text-shadow: -1px 0px var(--text-stroke-color), 1px 0px var(--text-stroke-color), 0px 1px var(--text-stroke-color), 0px -1px var(--text-stroke-color);
+  text-shadow: -1px 0px var(--text-stroke-color),
+    1px 0px var(--text-stroke-color), 0px 1px var(--text-stroke-color),
+    0px -1px var(--text-stroke-color);
   mix-blend-mode: hard-light;
   font-size: 14px;
 }
@@ -162,7 +161,7 @@
   min-width: 100%;
   min-height: 100%;
   position: absolute;
-  content: ' ';
+  content: " ";
   font-family: var(--accent-font), fantasy;
   background-color: #fff;
   font-size: 14px;
@@ -185,7 +184,6 @@
 .save__button {
   padding: 15px 20px;
   transition: box-shadow 0.3s ease;
-  border: 2px solid #000;
 }
 
 .save__button__text {
@@ -203,7 +201,6 @@
 
 dialog {
   width: 341px;
-  padding: 30px, 42px;
   font-family: var(--accent-font), fantasy;
   font-size: 14px;
   text-transform: uppercase;
@@ -234,7 +231,7 @@ dialog[open]::backdrop {
 .dialog-svg {
   width: 95px;
   height: 39px;
-} 
+}
 
 .dialog__content {
   display: flex;
@@ -245,12 +242,10 @@ dialog[open]::backdrop {
 }
 
 .dialog__button {
-  border: 2px solid #000;
   min-width: 257px;
   min-height: 38px;
   line-height: 0.9;
   text-transform: uppercase;
-  border: 2px solid #000;
 }
 
 .contrast {
@@ -375,7 +370,7 @@ dialog[open]::backdrop {
     font-size: clamp(2.222rem, -5.859rem + 45.455vw, 4rem);
     text-align: center;
   }
-  
+
   .header__text {
     font-size: 23px;
   }
@@ -407,7 +402,7 @@ dialog[open]::backdrop {
 
   .save__button {
     padding: 15px 18px;
-    font-size: 14px;;
+    font-size: 14px;
   }
 
   .save__button__text {
@@ -423,7 +418,7 @@ dialog[open]::backdrop {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 21px;;
+    height: 21px;
   }
 
   #save-svg {
@@ -433,5 +428,4 @@ dialog[open]::backdrop {
   dialog {
     margin: auto;
   }
-
 }

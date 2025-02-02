@@ -248,6 +248,10 @@ dialog[open]::backdrop {
   text-transform: uppercase;
 }
 
+#flopp, #save-svg {
+  color:#000;
+}
+
 .contrast {
   filter: contrast(50%);
 }
@@ -340,10 +344,6 @@ dialog[open]::backdrop {
 
 .like-icon.is-liked .sparks {
   animation: sparks 0.3s 0.3s ease-in;
-}
-
-#floppy {
-  color:#000;
 }
 
 @supports (-webkit-text-stroke: 1px var(--text-stroke-color)) {

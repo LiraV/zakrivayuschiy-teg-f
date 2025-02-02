@@ -342,6 +342,10 @@ dialog[open]::backdrop {
   animation: sparks 0.3s 0.3s ease-in;
 }
 
+#floppy {
+  color:#000;
+}
+
 @supports (-webkit-text-stroke: 1px var(--text-stroke-color)) {
   .image__label {
     -webkit-text-stroke: 1px var(--text-stroke-color);

@@ -429,7 +429,7 @@ dialog[open]::backdrop {
     height: 21px;
   }
 
-  #save-svg {
+  #save {
     transform: scale(0.75);
   }
 

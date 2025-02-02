@@ -248,6 +248,10 @@ dialog[open]::backdrop {
   text-transform: uppercase;
 }
 
+#floppy, #save-svg {
+  color:#000;
+}
+
 .contrast {
   filter: contrast(50%);
 }
